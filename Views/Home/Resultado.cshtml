@@ -1,0 +1,26 @@
+@{
+    ViewData["Tile"] = "Resultado";
+}
+
+@model NumeroViewModel
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Resultado</h3>
+                <br/>
+                 <br/> 
+                 
+                 O  Número @Model.Numero  @Model.ResultadoFeliz e @Model.ResultadoSortudo
+            </div>
+            <br/>
+            <a class="btn btn-success" asp-action="Voltar">
+               Voltar
+            </a> 
+        </div>
+        <hr />
+   
+  </div>
+ </div>     
+

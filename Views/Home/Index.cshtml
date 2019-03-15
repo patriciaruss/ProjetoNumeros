@@ -1,0 +1,18 @@
+@{
+    ViewData["Tile"] = "Calcula números Felizes";
+}
+<form asp-action="Resultado" method="post">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label" for="numero" >Digite o número</label>
+                    <input type="text" class="form-control" id="numero" name="numero" value="" onkeypress="return isNumberKey(event)" >
+                </div>
+                 <button type="submit" class="btn btn-success">Calcular</button>                                              
+            </div>             
+        </div>
+           <hr />
+    </div>
+</form>
+<script type="text/javascript"> function isNumberKey(evt) { var charCode = (evt.which) ? evt.which : event.keyCode; if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57)) return false; return true; } </script>
